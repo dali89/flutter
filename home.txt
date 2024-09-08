@@ -1,0 +1,79 @@
+import 'package:flutter/material.dart';
+import 'package:functional_textfield/functional_textfield.dart';
+import 'package:flutter/src/widgets/basic.dart';
+
+class Home extends StatelessWidget {
+  Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        // The title text which will be shown on the action bar
+        title: Text("Home"),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          // SizedBox(
+          //   width:200,
+          //   height:200,
+          //   // color:Colors.grey,
+          // )
+          Image.network(
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5SstzY24WeO7chIrSQz7lBP1p63gE4OKiw&s',
+            fit: BoxFit.cover,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Column(
+                children: [
+                  Text("Dewas Lake"),
+                  Text("Dewas Madhya Pradesh",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ))
+                ],
+              ),
+              Icon(
+                Icons.star,
+                size: 16,
+                color: Colors.red,
+              ),
+              Text("4.1"),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Column(
+                children: [Icon(Icons.call), Text("Call")],
+              ),
+              Column(
+                children: [Icon(Icons.navigation), Text("Route")],
+              ),
+              Column(
+                children: [Icon(Icons.share), Text("Route")],
+              )
+            ],
+          ),
+          // //  mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //   crossAxisAlignment: CrossAxisAlignment.end,
+          Text(
+              "I am Dali Vaishnav in Btech IT 1 in Indore I am Dali Vaishnav in Btech IT 1 in Indore I am Dali Vaishnav in Btech IT 1 in Indore I am Dali Vaishnav in Btech IT 1 in Indore")
+        ],
+      ),
+      //  Column(
+      //    children:[
+      //
+      //    ],
+      //  ),
+    );
+
+// Text("wegfbjherkjfh")
+  }
+}
